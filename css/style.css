@@ -1,0 +1,1034 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.8;
+}
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* header strat */
+#header{
+    background-color: #0f2f44;
+}
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_wrapper h4{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fefefe;
+    text-transform: capitalize;
+    padding: 16px 0px;
+}
+/* header end */
+
+
+/* navbar strat */
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.manu{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+}
+.manu ul{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.manu ul li a{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    text-transform: uppercase;
+    padding: 40px 10px;
+    display: inline-block;
+    transition: all linear 0.3s;
+}
+.manu ul li:hover a{
+    color: #ffc712;
+    background-color: #fff9e6;
+    animation: nav 1s alternate;
+    
+}
+    @keyframes nav{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.arrow{
+    padding-left: 5px;
+}
+.nav_icon{
+    display: flex;
+    column-gap: 20px;
+}
+.nav_icon_item{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999999;
+    transition: all linear 0.3s;
+}
+.nav_icon_item:hover i{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;    
+    color: #ffc712 ;
+    background-color: #fff9e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* navbar end */
+
+
+/* banner strat */
+#banner{
+    background-color: #e0eeff;
+    padding: 140px 0px;
+    
+}
+.banner_wrapper{
+    display: flex;
+}
+.banner_text_wrapper{
+    width: 470px;
+}
+.banner_text_wrapper h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.banner_text_wrapper h1{
+    font-family: 'Abril Fatface', cursive;
+    font-weight: 400;
+    font-size: 80px;
+    color: #0f2f44;
+    text-transform: uppercase;
+    padding-top: 8px;
+}
+.banner_text_wrapper h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #8484bf;
+    word-spacing: 15px;
+    letter-spacing: 12px;
+    text-transform: capitalize;
+    padding-top: 14px;
+}
+.banner_text_wrapper p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #8484bf;
+    line-height: 24px;
+    
+    padding: 30px 0;
+}
+.banner_btn{
+    display: flex;
+    column-gap: 20px;
+
+}
+.btn_item a{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+    background-color: #8484bf;
+    padding: 16px 18px;
+    border-radius: 5%;
+    transition: all linear 0.3s;
+}
+.btn_item:hover a{
+    background-color: #ffc712;
+}
+.btn_item2 a{
+   color: #8484bf;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 0px #00000029;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -13px;
+    transition: all linear 0.3s;
+    
+}
+.btn_item2:hover a{
+    background-color: #ffc712;
+    color:#fff ;
+    animation: play_btn2 2s alternate;
+}
+@keyframes play_btn2 {
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.banner_images{
+    width: 700px;
+    position:relative;
+}
+
+.banner_images img{
+    width: 120%;
+    position:absolute;
+    left: 0;
+    bottom: -140px;
+    display: block;
+}
+/* banner end */
+
+/* about strat */
+
+#about{
+    padding: 100px 0;
+}
+.about_wrapper{
+    display: flex;
+    column-gap: 15px;
+}
+.about_text{
+    width: 600px;
+}
+.about_text h5{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.about_text h2{
+    font-size: 32px; 
+    color: #0f2f44;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.about_text p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    line-height: 30px;
+    padding: 15px 0;
+    text-transform: capitalize;
+}
+.about_text .inner_about_text{
+    line-height: 44px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #0f2f44;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+.about_btn{
+    display: flex;
+    column-gap: 20px;
+}
+.about_btn a{
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0f2f44;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    text-transform: capitalize;
+    border-radius: 5%;
+    box-shadow: 1px 3px 5px 1px #0000003d;
+    transition: all linear 0.3s;
+}
+.about_btn a:hover {
+    background-color: #ffc712;
+    animation: about_btn 3s 2 alternate;
+}
+@keyframes about_btn {
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.about_image{
+    width: 570px;
+}
+
+/* about end */
+
+
+/* skill strat */
+#skill{
+    margin: 100px 0;
+}
+.skill_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.skill_image{
+    width: 570px;
+    position: relative;
+}
+.skill_image img{
+    position: absolute;
+    left: -210px;
+    top: 0;
+
+}
+.skill_content{
+    width: 570px;
+    
+}
+.skill_text{
+    text-align: right;
+}
+.skill_content h5{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.skill_content h2{
+    font-size: 32px; 
+    color: #0f2f44;
+    font-family: 'Abril Fatface', cursive;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.skill_content p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    line-height: 30px;
+    padding: 15px 0;
+    text-transform: capitalize;
+}
+.skill_progress_item{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    
+}
+.skill_progress_bar{
+    width: 480px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.skill_progress_info{
+    display: flex;
+    justify-content: flex-end;
+}
+.skill_progress_info span{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.skill_progress_persentage{
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 12px;
+    border-radius: 20px;
+    position: relative;
+}
+.persentage_inner{
+    position: absolute;
+    content: "";
+    width: 90%;
+    height: 100%;
+    background-color: #0f2f44;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+}
+.persentage_inner::after{
+    position: absolute;
+    content: "90%";
+    left: 0;
+    top: -25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif; 
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.skill_progress_item:nth-child(2) .persentage_inner{
+    background-color: #5d3b15;
+    width: 85%;
+}
+.skill_progress_item:nth-child(2) .persentage_inner::after{
+   content: "85%";
+}
+.skill_progress_item:nth-child(3) .persentage_inner{
+    background-color: #344a1f;
+    width: 75%;
+}
+.skill_progress_item:nth-child(3) .persentage_inner::after{
+   content: "75%";
+}
+.skill_progress_item:nth-child(4) .persentage_inner{
+    background-color: #344a1f;
+    width: 80%;
+}
+.skill_progress_item:nth-child(4) .persentage_inner::after{
+   content: "80%";
+}
+.skill_progress_icon{
+    width: 70px;
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.75);
+}
+/* skill end */
+
+
+/* service strat */
+#service{
+    background-color: #f5f5f5;
+    padding: 60px 0px;
+}
+.sec_heading{
+    text-align: center;
+}
+.sec_heading h4{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0f2f44;
+}
+.sec_heading h2{
+    font-size: 32px;
+    font-family: 'Abril Fatface', cursive;
+    color: #0f2f44;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.service_item_wrapper{
+    display: flex;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+.sevice_item1{
+    width: 370px;
+    
+}
+.service_inner_wrapper{
+    display: flex;
+    background-color: #e9e9e9;
+    width: 100%;
+    position: relative;
+    border-radius: 3%;
+}
+.service_item1_image{
+    padding: 60px 20px;
+}
+.service_item1_text{
+    padding: 30px 20px;
+}
+.service_item1_text h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222222;
+    text-transform: capitalize;
+}
+.service_item1_text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #444;
+    line-height: 24px;
+    padding-top: 15px;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    left: 0;
+    top: 0;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+    opacity: 0;
+   
+}
+.overlay h3{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.service_inner_wrapper:hover .overlay{
+    opacity: 1;
+}
+.servece_icon_inner a i{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    color: #222;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px 2px #00000030;
+    transition: all linear 0.3s;
+}
+.servece_icon_inner:hover a i{
+    background-color: yellow;
+}
+
+/* service end */
+
+
+/* protfolio strat */
+#protfolio{
+    padding: 100px 0;
+}
+.protfolio_wrapper{
+    display: flex;
+    column-gap: 60px;
+    margin-top: 60px;
+}
+.protfolio_item{
+    width: 350px;
+    height: 420px;
+    position: relative;
+}
+.protfolio_item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0px 2px 10px 2px #00000030;
+}
+.prot_img{
+    border-radius: 5px;
+}
+.protfolio_overlay{
+    position: absolute;
+    width: 100%;
+    height: 17%;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    opacity: 0;
+    transition: all linear 0.3s;
+}
+.protfolio_overlay h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+}
+.protfolio_item:hover .protfolio_overlay{
+    opacity: 1;
+}
+.protfolio_icon1 a i{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    transition: all linear 0.3s;
+}
+.protfolio_icon1:hover a i{
+    background-color: #ffc712;
+}
+.protfolio_icon2:hover a i{
+    background-color: #ffc712;
+}
+.protfolio_icon2 a i{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right:-25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+.protfolio_icon2:hover a i{
+    background-color: #ffc712;
+}
+.protfolio_btn{
+    margin-top: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 555px;
+}
+.protfolio_btn a{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0f2f44;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    text-transform: capitalize;
+    border-radius: 7%;
+    padding: 16px 20px;
+    transition: all linear 0.3s;
+    
+}
+.protfolio_btn:hover a{
+   background-color: #ffc712;
+}
+
+
+/* protfolio end */
+
+
+/* testimonial strat */
+#testimonial{
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+.testimonial_wrapper{
+    display: flex;
+    margin-top: 60px;
+    column-gap: 30px;
+}
+.testimonial_item{
+    display: flex;
+    width: 570px;
+}
+.testimonial_text{
+    background-color: #e9e9e9;
+    position: relative;
+}
+.testimonial_text p{
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 24px;
+    padding: 30px 0px 30px 20px;
+
+}
+.testimonial_text h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px 0 8px 20px;
+    color: #0f2f44;
+    text-transform: capitalize;
+}
+.testimonial_text span{
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 20px;
+    color: #0f2f44;
+}
+.testimonial_img{
+    border-radius: 2%;
+}
+.testimonial_overlay1 a i{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    left: -242px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+.testimonial_overlay1:hover a i{
+    background-color: #ffc712;
+}
+.testimonial_overlay2 a i{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+.testimonial_overlay2:hover a i{
+    background-color: #ffc712;
+}
+/* testimonial end */
+
+
+/* blog start */
+#blog{
+    padding: 100px 0;
+}
+.blog_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    margin-top: 65px;
+}
+.blog_content{
+    width: 350px;
+    background-color: #f5f5f5;
+    position: relative;
+    transition: all linear 0.3s;
+}
+.blog_content img{
+    width: 310px;
+    height: 285px;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 20px 20px 0px 20px;
+}
+.blog_content_text{
+    padding: 30px 20px;
+}
+.blog_content_text h5{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Ubuntu', sans-serif;
+    color: #777777;
+    margin-bottom: 20px;
+}
+.blog_content_text p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    margin-bottom: 26px;
+}
+.blog_content_text span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    text-transform: capitalize;
+}
+.blog_content_text span i{
+    margin-left:  20px;
+    font-size: 13px;
+}
+.blog_content:hover{
+    background-color: #0f2f44;
+    
+}
+.blog_content:hover .blog_content_text h5{
+    color: #fff;
+}
+.blog_content:hover .blog_content_text p{
+    color: #fff;
+}
+.blog_content:hover .blog_content_text span{
+    color: #fff;
+}
+.blog_overlay a i{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+    
+}
+.blog_overlay:hover a i{
+    
+   background-color: yellow;
+}
+.blog_overlay2 a i{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+    
+}
+.blog_overlay2:hover a i{
+   background-color: yellow;
+}
+.blog_btn{
+    margin-top: 60px;
+    display: inline-block;
+    margin-left: 555px;
+}
+.blog_btn a{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #0f2f44;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 2px #00000030;
+    text-transform: capitalize;
+    border-radius: 7%;
+    padding: 16px 20px;
+    transition: all linear 0.3s;
+}
+.blog_btn:hover a{
+    background-color: yellow;
+}
+/* blog end */
+
+/* footer start */
+#footer{
+    padding: 95px 0 60px 0;
+    background-color: #f5f5f5;
+    box-shadow: 0px 2px 5px 2px #00000030;
+}
+.footer_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.footer_item{
+    width: 270px;
+    
+}
+.footer_item p{
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777;
+    margin: 20px 0;
+}
+.footer_icon_inner_wrapper{
+    display: flex;
+    column-gap: 10px;
+}
+.footer_icon_inner a i{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0f2f44;
+    color: #0f2f44;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+.footer_icon_inner:hover a i{
+    background-color: #0f2f44;
+    color: #fff;
+}
+.footer_item2{
+    width: 270px;
+}
+.footer_item2 h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+.foote_inner_icon{
+    display: flex;
+}
+.footer_inner_text_wrapper i{
+    margin-top: 12px;
+    color: #777;
+    font-size: 20px;
+}
+.footer_inner_text_wrapper span{
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+.foote_inner_icon2{
+    display: flex;
+    margin: 30px 0;
+}
+.footer_item3{
+    width: 170px;
+}
+.footer_item3 h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+.footer_links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.footer_links div a{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #545454;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+.footer_links div:hover a{
+    color: #0f2f44;
+    margin-left: 18px;
+}
+.footer_item4 h4{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+.footer_item4 {
+    width: 370px;
+}
+.footer_image_wrapper{
+    display: flex;
+    column-gap: 15px;
+  
+}
+.footer_image_wrapper2{
+    display: flex;
+    column-gap: 15px;
+    margin-top: 15px;
+}
+/* footer end */
+/* second footer start */
+#secnd_footer{
+    margin: 18px 0;
+}
+.secnd_footer_wrapper{
+    text-align: center;
+}
+.secnd_footer_wrapper p{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #767676;
+    text-transform: capitalize;
+}
+.secnd_footer_wrapper p a{
+    text-transform: uppercase;
+    color: #fdc512;
+}
+.secnd_footer_wrapper p span{
+    margin: 0 15px;
+}
+
+
+/* second footer end */
+/* blog start */
+/* blog end */
+
+/* top to bottom */
+.top_to_bottom i{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    
+}
+.top_to_bottom{
+    display: none;
+}
